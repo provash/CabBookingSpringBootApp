@@ -1,0 +1,8 @@
+server:
+  servlet.context-path: "/booking-service"
+  port: 8080
+
+logging.level:
+  com.pkd: ${APP_PACKAGE_LOGGING_LEVEL:INFO}
+  org.springframework: ${LIBRARY_LOGGING_LEVEL:INFO}
+logging.pattern.console: "[%date{dd-MMM-yyyy_HH:mm:ss.SSS} | %thread] %-5level %logger[%method] : %message%n"
